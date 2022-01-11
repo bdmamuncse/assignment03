@@ -17,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var passwordController=TextEditingController();
   var controller=TextEditingController();
   var isPasswordShow=true;
+  var isCityIsSelected=true;
 
   @override
   void initState() {
