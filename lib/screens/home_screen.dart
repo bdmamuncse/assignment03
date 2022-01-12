@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assignment_03/screens/second_page.dart';
 
+import 'home_screen_after_login.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -94,7 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(5)),
                         borderSide: BorderSide(color: Colors.red ),
-                      ), hintText: 'put your name',
+                      ),
+                      hintText: 'put your name',
                      contentPadding: EdgeInsets.only(left: 50),
                      ),
                   ),
@@ -216,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         const Text(
                           '   Retype Password',
-                          style: TextStyle(
+                            style: TextStyle(
                             color: Colors.red,
                             fontSize: 10,
                             fontWeight: FontWeight.bold,
@@ -263,9 +266,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: RaisedButton(
                       color: Colors.red,
                       onPressed: (){
-                        if(formKey.currentState!.validate()){
-                          _loginSubmit();
-                        }
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const HomeScreenAfterLogin()));
+                        //if(formKey.currentState!.validate()){_loginSubmit();}
                       },
                       child: const Text('Signup'),
 

@@ -1,6 +1,6 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -185,7 +185,9 @@ class SecondPage extends StatelessWidget {
                 children: [
 
                   Image.network("https://cdn-icons-png.flaticon.com/128/5968/5968764.png", height: 30, width: 30,),
+                  const Text('  '),
                   Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/300px-Google_%22G%22_Logo.svg.png", height: 30, width: 30,),
+                  const Text('  '),
                   Image.network("https://cdn-icons-png.flaticon.com/512/124/124021.png", height: 30, width: 30,),
                 ],
               ),
