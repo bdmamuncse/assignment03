@@ -1,5 +1,1 @@
-![alt text](https://drive.google.com/file/d/1xYPJhiUZXAwQ_C2HObL8lSLjHVOsGi08/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1NWi1tdlLZzGw4Xwlel_yz3ZO5YsP5oHj/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1sl5L2e9wkVHZA7DO0rUeLwBztsrxfcwG/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1tlhDrUkBP3TkfKmZbvko4fpJk6Jdauuw/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1DBO8pHqEct32WaAkCkcDGkIF2YilPxeu/view?usp=sharing)
+https://drive.google.com/drive/folders/1_KjGtFR7n86SVviBwJ8b4XpNFxWo5Iwj
