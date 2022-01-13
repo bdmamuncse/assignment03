@@ -204,9 +204,6 @@ class SecondPage extends StatelessWidget {
               ),
             ),
 
-              
-
-
           ],
         ),
       ),
