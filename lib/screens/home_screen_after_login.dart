@@ -1,6 +1,9 @@
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'drawer_list.dart';
 
 class HomeScreenAfterLogin extends StatelessWidget {
   const HomeScreenAfterLogin({Key? key}) : super(key: key);
@@ -18,11 +21,8 @@ class HomeScreenAfterLogin extends StatelessWidget {
         ],
       ),
 
-      drawer: const Drawer(
-
-      ),
+      drawer: const DrawerList(),
       body: Container(
-
         child: Column(
           children: [
             Center(
@@ -39,6 +39,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                 ),
               ),
             ),
+            const Text('\n', style: TextStyle(fontSize: 10),),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -58,7 +59,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                           color: Colors.blueAccent,
                              image: DecorationImage(
                               image: NetworkImage(
-                                  "https://img.icons8.com/office/344/user.png",
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
                               ),
                               alignment: Alignment.center,
                             ),
@@ -87,7 +88,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                           color: Colors.blueAccent,
                           image: DecorationImage(
                             image: NetworkImage(
-                              "https://img.icons8.com/office/344/user.png",
+                              "https://avatars.githubusercontent.com/u/50566037?v=4",
                             ),
                             alignment: Alignment.center,
                           ),
@@ -116,7 +117,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                           color: Colors.blueAccent,
                           image: DecorationImage(
                             image: NetworkImage(
-                              "https://img.icons8.com/office/344/user.png",
+                              "https://avatars.githubusercontent.com/u/50566037?v=4",
                             ),
                             alignment: Alignment.center,
                           ),
@@ -145,7 +146,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                           color: Colors.blueAccent,
                           image: DecorationImage(
                             image: NetworkImage(
-                              "https://img.icons8.com/office/344/user.png",
+                              "https://avatars.githubusercontent.com/u/50566037?v=4",
                             ),
                             alignment: Alignment.center,
                           ),
@@ -174,7 +175,7 @@ class HomeScreenAfterLogin extends StatelessWidget {
                           color: Colors.blueAccent,
                           image: DecorationImage(
                             image: NetworkImage(
-                              "https://img.icons8.com/office/344/user.png",
+                              "https://avatars.githubusercontent.com/u/50566037?v=4",
                             ),
                             alignment: Alignment.center,
                           ),
@@ -190,14 +191,241 @@ class HomeScreenAfterLogin extends StatelessWidget {
                 ),
               ],
             ),
-
-
+            Container(
+              padding: const EdgeInsets.only(left: 60.0,right: 60.0),
+              child: Column(
+                children: [
+                  Container(
+                    alignment: Alignment.bottomLeft,
+                    padding: const EdgeInsets.only(left: 60.0,right: 60.0),
+                    child: const Text('\n Featured Categories', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 500,
+                    child: SingleChildScrollView(
+                     // padding: const EdgeInsets.only(left: 60.0,right: 60.0,),
+                      //controller: ScrollController(),
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                          Container(
+                            height:100 ,
+                            width:80,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                            ),
+                          ),
+                          const Text('   '),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 130,
+                    width: 500,
+                    child: Column(
+                      children: [
+                        Container(
+                          alignment: Alignment.topLeft,
+                          //padding: const EdgeInsets.only(left: 60.0),
+                          child: const Text('\n Featured Categories', style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),),
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 230,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                                color: Colors.grey,
+                                image: DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: NetworkImage(
+                                    "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                  ),
+                                  //alignment: Alignment.center,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              height: 100,
+                              width: 230,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                                color: Colors.grey,
+                                image: DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: NetworkImage(
+                                    "https://avatars.githubusercontent.com/u/50566037?v=4",
+                                  ),
+                                  //alignment: Alignment.center,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              ),
           ],
         ),
-
-
       ),
-
     );
   }
 }
